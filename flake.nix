@@ -26,6 +26,11 @@
           pkgs = import nixpkgs {inherit system;};
         });
   in {
+    packages = forAllSystems ({pkgs}: {
+      default = pkgs.ponysay;
+      consul = pkgs.consul;
+    });
+
     # Development environment output
     devShells = forAllSystems ({pkgs}: {
       default = pkgs.mkShell {
@@ -36,6 +41,9 @@
           zoxide
           fzf
         ];
+        shellHook = ''
+          sesh connect .
+        '';
       };
     });
   };
