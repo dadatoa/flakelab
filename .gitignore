@@ -1,0 +1,1 @@
+consul/checkpoint-signature consul/node-id consul/raft consul/raft/peers.info consul/raft/snapshots consul/raft/wal consul/raft/wal/00000000000000000001-0000000000000000.wal consul/raft/wal/wal-meta.db consul/serf consul/serf/local.snapshot consul/serf/remote.snapshot consul/server_metadata.json
