@@ -28,6 +28,7 @@
   in {
     packages = forAllSystems ({pkgs}: {
       default = pkgs.ponysay;
+      overmind = pkgs.overmind;
       consul = pkgs.consul;
       glance = pkgs.glance;
     });
