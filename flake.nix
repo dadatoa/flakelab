@@ -29,6 +29,7 @@
     packages = forAllSystems ({pkgs}: {
       default = pkgs.ponysay;
       consul = pkgs.consul;
+      glance = pkgs.glance;
     });
 
     # Development environment output
@@ -42,7 +43,7 @@
           fzf
         ];
         shellHook = ''
-          sesh connect .
+          tmux new-session -A -s flakelab
         '';
       };
     });
