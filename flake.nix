@@ -45,7 +45,6 @@
           zoxide
         ];
         shellHook = ''
-          tmux new-session -A -s flakelab
         '';
       };
     });
