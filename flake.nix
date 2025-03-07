@@ -38,10 +38,11 @@
       default = pkgs.mkShell {
         # The Nix packages provided in the environment
         packages = with pkgs; [
+          fzf
+          overmind
           sesh
           tmux
           zoxide
-          fzf
         ];
         shellHook = ''
           tmux new-session -A -s flakelab
