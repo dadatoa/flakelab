@@ -31,6 +31,8 @@
       overmind = pkgs.overmind;
       consul = pkgs.consul;
       glance = pkgs.glance;
+      gitea = pkgs.gitea;
+      sqlite = pkgs.sqlite;
     });
 
     # Development environment output
