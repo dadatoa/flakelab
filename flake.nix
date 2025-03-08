@@ -32,7 +32,6 @@
       consul = pkgs.consul;
       glance = pkgs.glance;
       gitea = pkgs.gitea;
-      sqlite = pkgs.sqlite;
     });
 
     # Development environment output
@@ -43,10 +42,12 @@
           fzf
           overmind
           sesh
+          sqlite # database For gitea
           tmux
           zoxide
         ];
         shellHook = ''
+        exec fish
         '';
       };
     });
