@@ -46,9 +46,9 @@
           tmux
           zoxide
         ];
-        shellHook = ''
-        exec fish
-        '';
+        # shellHook = ''
+        # exec fish
+        # '';
       };
     });
   };
