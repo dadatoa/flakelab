@@ -1,3 +1,7 @@
+## Dépendances
+
+Les dépendances sont les packages installé de le shell de développement. Globalement, il n'est donc pas indispensables de les installées, un `nix develop` à la racine du projet fonctionne.
+
 ## Consul
 
 Commande pour lancer consul depuis le flake. L'adresse IP est celle de l'interfce de Tailscale pour le node.
