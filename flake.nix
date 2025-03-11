@@ -32,6 +32,7 @@
       consul = pkgs.consul;
       glance = pkgs.glance;
       gitea = pkgs.gitea;
+      caddy = pkgs.caddy;
     });
 
     # Development environment output
